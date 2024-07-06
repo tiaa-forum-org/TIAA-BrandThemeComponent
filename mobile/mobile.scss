@@ -1,0 +1,6 @@
+/* hack on 6/28/21
+ * keeps header from overylaying slide in on mobile */
+.Navigation.Navigation--global {
+/*    z-index: 1010; */
+    z-index: 900;
+}

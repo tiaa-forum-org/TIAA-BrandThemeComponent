@@ -1,0 +1,165 @@
+/* tiaa-contrib-button id sets color of the contribute button on the header */
+
+#tiaa-contrib-button {
+    background: $contribute_button_color;
+    color: $contribute_text_color; // white is a better text color except for yellow...
+}
+/* don't display admin and site information if not logged in */
+.html.anon li.nav-item-about {
+    display: none;
+}
+/* toggle the header based on logged on state */
+html.anon #tiaa-header-loggedon {
+    display: none;
+}
+html.anon #tiaa-header-loggedoff {
+    display: block;
+}
+html:not(.anon) #tiaa-header-loggedon {
+    display: block;
+
+}
+html:not(.anon) #tiaa-header-loggedoff {
+    display: none;
+}
+/* header style lifted from twittercommunity.com */
+.Navigation.Navigation--global {
+    font-family: Helvetica, Arial, sans-serif;
+    height: 48px;
+    position: relative;
+    width: 100%;
+    z-index: 888;
+}
+.Navigation.Navigation--global {
+    z-index: 1888;
+}
+.Navigation.Navigation--global .Navigation-inner {
+/*    max-width: 1110px; */
+}
+.Navigation.Navigation--global .Navigation-inner {
+    height: 48px;
+/*    margin: 0 auto; 
+    max-width: 990px; */
+    position: relative;
+}
+.Navigation.Navigation--global .Navigation-inner-list.Navigation-inner-list--breadcrumb {
+    float: left;
+}
+.Navigation.Navigation--global .Navigation-inner-item, .Navigation.Navigation--global .Navigation-inner-list {
+    display: block;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    vertical-align: top;
+}
+.Navigation.Navigation--global .NavigationItem {
+    display: inline-block;
+}
+
+.NavigationItem {
+    font-size: 21px;
+    font-weight: 300;
+    line-height: 24px;
+    position: relative;
+    vertical-align: top;
+    /* z-index of forum header is 1000 so we want navigation popdown over that */
+    z-index: 1010;
+}
+
+.NavigationItem.NavigationItem--main:before {
+/*    content: '/'; */
+    content: ' '; 
+    color: #232323;
+    font-size: 26px;
+    font-weight: 100;
+    left: -4px;
+    opacity: 1;
+    position: absolute;
+    top: 12px;
+    -webkit-transition: all 0.1s;
+    transition: all 0.1s;
+}
+.NavigationItem:after {
+/*    background-color: #7950C1; */
+    background-color: #e9e9e9; 
+    content: ' ';
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    -webkit-transition: all 0.1s;
+    transition: all 0.1s;
+    width: 100%;
+    z-index: -1;
+}
+.NavigationItem .NavigationItem-link {
+    display: block;
+    color: #232323;
+    padding: 12px 15px;
+    text-decoration: none;
+}
+/* used for logo image */
+.NavigationItem .NavigationItem-link-nobg {
+    display: block;
+    padding: 0px 0px;
+    background-color: #fff;
+}
+
+.NavigationItem.NavigationItem--main .Navigation--sub {
+    left: -36px;
+}
+.NavigationItem.NavigationItem--main .Navigation--sub {
+/*    border-top-left-radius: 0px; */
+    left: -10px;
+}
+.Navigation.Navigation--sub {
+    background-color: #FFF;
+    list-style: none;
+    padding: 6px 0 0;
+    position: absolute;
+    top: 48px;
+    z-index: 1010;
+}
+.NavigationItem .Navigation--sub {
+    display: none;
+}
+.Navigation.Navigation--global .NavigationItem .NavigationItem--sub .NavigationItem-link {
+    padding-left: 25px;
+}
+.NavigationItem.NavigationItem--sub .NavigationItem-link {
+/*    color: #7950C1; */
+    color: #232323;
+    display: block;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 24px;
+    -webkit-transition: all 0.2s;
+    transition: all 0.2s;
+    width: 75px;
+}
+.NavigationItem .NavigationItem--sub .NavigationItem-link {
+    padding-left: 25px;
+}
+.NavigationItem .NavigationItem-link {
+    display: block;
+    color: #232323;
+    padding: 12px 15px;
+    text-decoration: none;
+}
+.NavigationItem.NavigationItem--sub {
+    margin-bottom: 6px;
+}
+.NavigationItem .NavigationItem-link:hover {
+    background-color: #fff;
+    color: #232323;
+}
+.NavigationItem--withChildren:hover .Navigation--sub {
+    display: block;
+}
+.NavigationItem--withChildren:touch .Navigation--sub {
+    display: block;
+}
+/* keeps header from overylaying new post popup on mobile */
+.Navigation.Navigation--global {
+    z-index: 1010;
+}

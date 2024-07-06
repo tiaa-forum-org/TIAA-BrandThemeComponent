@@ -1,0 +1,42 @@
+<!-- .wrap.contents.clearfix seems to left justify to existing header and remains responsive... -->
+
+<div id='tiaa-header-loggedon' class='wrap contents clearfix'>
+    <div class="Navigation Navigation--global is-loaded">
+      <div class="Navigation-inner">
+        <ul class="Navigation-inner-list Navigation-inner-list--breadcrumb">
+          <li class="NavigationItem NavigationItem--main">
+           <a class="NavigationItem-link-nobg tiaa-logo-div" href="//tiaa-forum.org">
+                <img  height="48px"></a> 
+          </li>
+          <li class="NavigationItem NavigationItem--main">
+            <a class="NavigationItem-link" href="https://tiaa-forum.org/">Home</a>
+          </li>
+          <li class="NavigationItem NavigationItem--main">
+            <a id='tiaa-contrib-button' class="NavigationItem-link" href="https://tiaa-forum.org/contribute">Contribute</a>
+          </li>
+          </ul>
+      </div>
+    </div>
+</div>
+<div id='tiaa-header-loggedoff' class='wrap contents clearfix'>
+    <div class="Navigation Navigation--global is-loaded">
+      <div class="Navigation-inner">
+        <ul class="Navigation-inner-list Navigation-inner-list--breadcrumb">
+          <li class="NavigationItem NavigationItem--main">
+            <a class="NavigationItem-link-nobg" href="//tiaa-forum.org">
+                <img  height="48px"></a>
+          </li>
+          <li class="NavigationItem NavigationItem--main">
+            <a class="NavigationItem-link" href="https://tiaa-forum.org/">Home</a>
+          </li>
+          <li class="NavigationItem NavigationItem--main">
+              <a class="NavigationItem-link" href="https://tiaa-forum.org/invite-request">Signup</a>
+        </ul>
+      </div>
+    </div>
+</div>
+<script type="text/discourse-plugin" version="0.8">
+  $('#tiaa-header-loggedoff img, #tiaa-header-loggedon img').each(function() {
+      this.src = settings.theme_uploads.tiaa_logo_small;
+  });
+</script>

@@ -3,7 +3,7 @@
 This repository contains the files required for the "Brand Header" (header above main 
 Discourse header on top of the forum home page), as well as a few files/scripts to support
 the development and support of these files
-## Design
+## Repo Design Conventions
 This repository is comprised of 3 branches:
 - prod - this is for production (should be pretty stable)
 - test - use this branch to get a header for the test instance (used for testing/staging)
