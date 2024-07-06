@@ -1,3 +1,15 @@
 .Navigation.Navigation--global .Navigation-inner-list.Navigation-inner-list--breadcrumb {
     padding-left: 1em;
 }
+#tiaa-header-background-bar {
+    background-color: #6EC1E4;
+    width: var(--d-max-width); /* changed 5/26/23 by LewG */
+    height: 70px;
+    margin: auto;
+}
+.has-sidebar-page #tiaa-header-background-bar {
+    width: calc(var(--d-max-width) + var(--d-sidebar-width));
+}
+.NavigationItem {
+    margin-right: 15px;
+}

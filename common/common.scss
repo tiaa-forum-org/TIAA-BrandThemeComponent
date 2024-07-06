@@ -1,3 +1,32 @@
+/* added 6/23/24 for contribute banner */
+
+/* contribute banner image */
+.tiaa-contribute-image {
+    display: block;
+    display: none; 
+    align-items: center;
+    height: 65px;
+    width: auto;
+}
+/* toggle the contribute banner based on logged on state */
+
+html.anon #tiaa-contribute-banner { 
+/* #tiaa-contribute-banner { */
+    display: none;
+}
+/* get rid of inherited styles on anchor tag */
+#tiaa-contribute-banner {
+    all: unset; /* Clears all existing styles */
+    position: absolute;
+    right: 2px;
+    display: block; /* Ensures the anchor tag covers the entire area of its child elements */
+    cursor: pointer; /* Ensures the cursor changes to a pointer when hovering over the link */
+    text-decoration: none; /* Removes any text decoration (underline) */
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 1011;
+}
+
 /* tiaa-contrib-button id sets color of the contribute button on the header */
 
 #tiaa-contrib-button {
@@ -24,7 +53,7 @@ html:not(.anon) #tiaa-header-loggedoff {
 }
 /* header style lifted from twittercommunity.com */
 .Navigation.Navigation--global {
-    font-family: Helvetica, Arial, sans-serif;
+/*    font-family: Helvetica, Arial, sans-serif; */
     height: 48px;
     position: relative;
     width: 100%;
@@ -35,6 +64,13 @@ html:not(.anon) #tiaa-header-loggedoff {
 }
 .Navigation.Navigation--global .Navigation-inner {
 /*    max-width: 1110px; */
+}
+.tiaa-head-buttons {
+    font-family: Antonio, Helvetica, Arial, sans-serif;
+    font-weight: 600;
+    padding-top: 10px;
+    padding-left: 0px;
+    margin-left: 0px;
 }
 .Navigation.Navigation--global .Navigation-inner {
     height: 48px;
@@ -58,7 +94,7 @@ html:not(.anon) #tiaa-header-loggedoff {
 
 .NavigationItem {
     font-size: 21px;
-    font-weight: 300;
+    font-weight: 600;
     line-height: 24px;
     position: relative;
     vertical-align: top;
@@ -69,9 +105,9 @@ html:not(.anon) #tiaa-header-loggedoff {
 .NavigationItem.NavigationItem--main:before {
 /*    content: '/'; */
     content: ' '; 
-    color: #232323;
+    color: white;
     font-size: 26px;
-    font-weight: 100;
+    font-weight: 600;
     left: -4px;
     opacity: 1;
     position: absolute;
@@ -81,7 +117,8 @@ html:not(.anon) #tiaa-header-loggedoff {
 }
 .NavigationItem:after {
 /*    background-color: #7950C1; */
-    background-color: #e9e9e9; 
+    background-color: #203386; 
+    color: white;
     content: ' ';
     height: 100%;
     left: 0;
@@ -94,7 +131,7 @@ html:not(.anon) #tiaa-header-loggedoff {
 }
 .NavigationItem .NavigationItem-link {
     display: block;
-    color: #232323;
+    color: white;
     padding: 12px 15px;
     text-decoration: none;
 }
@@ -102,7 +139,7 @@ html:not(.anon) #tiaa-header-loggedoff {
 .NavigationItem .NavigationItem-link-nobg {
     display: block;
     padding: 0px 0px;
-    background-color: #fff;
+    background-color: white;
 }
 
 .NavigationItem.NavigationItem--main .Navigation--sub {
@@ -131,7 +168,7 @@ html:not(.anon) #tiaa-header-loggedoff {
     color: #232323;
     display: block;
     font-size: 16px;
-    font-weight: 300;
+    font-weight: 600;
     line-height: 24px;
     -webkit-transition: all 0.2s;
     transition: all 0.2s;
@@ -142,16 +179,23 @@ html:not(.anon) #tiaa-header-loggedoff {
 }
 .NavigationItem .NavigationItem-link {
     display: block;
-    color: #232323;
+    color: white;
     padding: 12px 15px;
     text-decoration: none;
 }
 .NavigationItem.NavigationItem--sub {
     margin-bottom: 6px;
 }
+.NavigationItem:hover { 
+    transform: scale(0.8);
+    transition: transform 0.7s ease;
+}
 .NavigationItem .NavigationItem-link:hover {
-    background-color: #fff;
-    color: #232323;
+    background-color: #203386;
+    color: yellow;
+}
+#tiaa-contrib-button:hover {
+    color: yellow;
 }
 .NavigationItem--withChildren:hover .Navigation--sub {
     display: block;
