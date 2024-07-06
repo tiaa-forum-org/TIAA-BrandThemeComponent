@@ -1,5 +1,5 @@
 {
-  "name": "TIAA Brand Header Component",
+  "name": "F2 TIAA Brand Header Component - 240624",
   "component": true,
   "license_url": null,
   "about_url": null,
@@ -8,6 +8,7 @@
   "minimum_discourse_version": null,
   "maximum_discourse_version": null,
   "assets": {
+    "TIAA-contribute-type-outlines": "assets/TIAA-contribute-type-outlines.svg",
     "tiaa_logo_small": "assets/tiaa_logo_small.png"
   },
   "color_schemes": {
