@@ -5,7 +5,7 @@
  /* Media query for viewport less than 500px to turn off contribute banner */
  @media (max-width: 500px) {
     #tiaa-contribute-banner {
-        display: none; // could use another graphic for this?
+        display: none; // 6/24/24 for now, we just turn it off - seems to mis-behave on tablets or anything mobile
     }
 }
 .tiaa-contribute-image-div {
@@ -21,8 +21,10 @@
 }
 #tiaa-header-background-bar {
     background-color: #6EC1E4;
-    width: 100%;
-    padding: 0;
+//  width: 100vw;
+  width: 100%;
+//  margin: 0;
+  padding: 0;
     height: 60px;
     margin: auto;
 }
@@ -36,3 +38,7 @@
         display: none;
     }
 }
+
+
+
+
