@@ -3,16 +3,9 @@
 /* contribute banner image */
 .tiaa-contribute-image {
     display: block;
-//    display: none; 
     align-items: center;
+    width: 500px;
     height: 65px;
-    width: auto;
-}
-/* toggle the contribute banner based on logged on state */
-
-html.anon #tiaa-contribute-banner { 
-/* #tiaa-contribute-banner { */
-    display: none;
 }
 /* get rid of inherited styles on anchor tag */
 #tiaa-contribute-banner {
