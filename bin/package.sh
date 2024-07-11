@@ -33,6 +33,4 @@ esac
 
 cd ../
 
-# echo "zip -r ${$outdir}/${pkgPrefix}TIAA-BrandThemeComponent-${current_date} ./ -x .idea/* .git*"
-
-echo "zip -r ${outdir}/${pkgPrefix}TIAA-BrandThemeComponent-${current_date} ./ -x .idea/* -x git*"
+zip -r ${outdir}/${pkgPrefix}TIAA-BrandThemeComponent-${current_date} ./ -x .idea/\* -x .git* -x .git/\*
