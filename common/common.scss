@@ -1,5 +1,9 @@
-/* added 6/23/24 for contribute banner */
+/* tiaa blue bar brand header */
+.tiaa-brand-header-bar {
+    position: relative;
+}
 
+/* added 6/23/24 for contribute banner */
 /* contribute banner image */
 .tiaa-contribute-image-div {
     background-image: url($TIAA-contribute-type-outlines);
@@ -205,9 +209,6 @@ html:not(.anon) #tiaa-header-loggedoff {
     color: yellow;
 }
 .NavigationItem--withChildren:hover .Navigation--sub {
-    display: block;
-}
-.NavigationItem--withChildren:touch .Navigation--sub {
     display: block;
 }
 /* keeps header from overylaying new post popup on mobile */
