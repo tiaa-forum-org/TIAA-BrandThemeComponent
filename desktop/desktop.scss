@@ -3,12 +3,29 @@
 }
 #tiaa-header-background-bar {
     background-color: #6EC1E4;
-    width: var(--d-max-width); /* changed 5/26/23 by LewG */
+    width: calc(var(--d-max-width) - 22px);
+    max-width: calc(100vw - 40px);
     height: 70px;
     margin: auto;
 }
+@media (min-width: var(--d-max-width)) {
+    #tiaa-header-background-bar {
+        width: var(--d-max-width);
+    }
+}
+
+@media (max-width: calc(var(--d-max-width) - 1px)) {
+    #tiaa-header-background-bar {
+        width: 100vw;
+    }
+}
+@media (max-width: 960px) {
+    #tiaa-contribute-banner {
+        display: none;
+    }
+}
 .has-sidebar-page #tiaa-header-background-bar {
-    width: calc(var(--d-max-width) + var(--d-sidebar-width));
+    width: calc(var(--d-max-width) + var(--d-sidebar-width) - 22px);
 }
 .NavigationItem {
     margin-right: 15px;
