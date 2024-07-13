@@ -1,5 +1,20 @@
+/*
+ * turn the monthly contribution banner is off on mobile portrait (until we get a better graphic?)
+ */
+ /* mobile adjustments needed for contribute text in the brand header */
+ /* Media query for viewport less than 500px to turn off contribute banner */
+ @media (max-width: 500px) {
+    #tiaa-contribute-banner {
+        display: none; // could use another graphic for this?
+    }
+}
+.tiaa-contribute-image-div {
+    position: relative;
+    right: -600px;
+}
 /* hack on 6/28/21
- * keeps header from overylaying slide in on mobile */
+ * keeps header from overlaying slide in on mobile
+ */
 .Navigation.Navigation--global {
 /*    z-index: 1010; */
     z-index: 900;
@@ -7,9 +22,17 @@
 #tiaa-header-background-bar {
     background-color: #6EC1E4;
     width: 100%;
-    height: 70px;
+    padding: 0;
+    height: 60px;
     margin: auto;
 }
-li.tiaa-hottopics.NavigationItem.NavigationItem--main{
-    display: none;
+.tiaa-head-buttons {
+    scale: 75%;
+    position: absolute;
+    left: -30px;
+}
+@media (max-width: 500px) {
+    li.tiaa-hottopics.NavigationItem.NavigationItem--main{
+        display: none;
+    }
 }

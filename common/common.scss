@@ -5,7 +5,9 @@
 
 /* added 6/23/24 for contribute banner */
 /* contribute banner image */
-.tiaa-contribute-image {
+.tiaa-contribute-image-div {
+    background-image: url($TIAA-contribute-type-outlines);
+    background-size: cover;
     display: block;
     align-items: center;
     width: 500px;
@@ -16,14 +18,19 @@
     all: unset; /* Clears all existing styles */
     position: absolute;
     right: 2px;
-    display: block; /* Ensures the anchor tag covers the entire area of its child elements */
+    display: inline-block; /* Ensures the anchor tag covers the entire area of its child elements */
     cursor: pointer; /* Ensures the cursor changes to a pointer when hovering over the link */
     text-decoration: none; /* Removes any text decoration (underline) */
     top: 50%;
     transform: translateY(-50%);
-    z-index: 1011;
+    z-index: 999;
 }
 
+@if $display_contribute_banner == "false" {
+    #tiaa-contribute-banner {
+        display: none;
+    }
+}
 /* tiaa-contrib-button id sets color of the contribute button on the header */
 
 #tiaa-contrib-button {
@@ -57,7 +64,7 @@ html:not(.anon) #tiaa-header-loggedoff {
     z-index: 888;
 }
 .Navigation.Navigation--global {
-    z-index: 1888;
+    z-index: 999;
 }
 .Navigation.Navigation--global .Navigation-inner {
 /*    max-width: 1110px; */
@@ -96,7 +103,7 @@ html:not(.anon) #tiaa-header-loggedoff {
     position: relative;
     vertical-align: top;
     /* z-index of forum header is 1000 so we want navigation popdown over that */
-    z-index: 1010;
+    z-index: 999;
 }
 
 .NavigationItem.NavigationItem--main:before {
@@ -152,7 +159,7 @@ html:not(.anon) #tiaa-header-loggedoff {
     padding: 6px 0 0;
     position: absolute;
     top: 48px;
-    z-index: 1010;
+    z-index: 998;
 }
 .NavigationItem .Navigation--sub {
     display: none;
@@ -199,5 +206,5 @@ html:not(.anon) #tiaa-header-loggedoff {
 }
 /* keeps header from overylaying new post popup on mobile */
 .Navigation.Navigation--global {
-    z-index: 1010;
+    z-index: 999;
 }
