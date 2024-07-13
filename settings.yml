@@ -15,3 +15,8 @@ contribute_text_color:
   choices:
     - white
     - black
+
+display_contribute_banner:
+  type: bool
+  default: false
+  description: "Select to enable the Contribute Banner to the brand header."
