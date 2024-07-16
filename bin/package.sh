@@ -33,4 +33,9 @@ esac
 
 cd ../
 
+mv about.json ${outdir}/about.json.orig
+sed -e "/name\":/s/\",/-${current_date}\",/" ${outdir}/about.json.orig >about.json
+
 zip -r ${outdir}/${pkgPrefix}TIAA-BrandThemeComponent-${current_date} ./ -x .idea/\* -x .git* -x .git/\*
+
+mv ${outdir}/about.json.orig about.json
