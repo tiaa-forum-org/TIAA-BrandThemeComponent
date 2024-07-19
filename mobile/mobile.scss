@@ -2,8 +2,8 @@
  * turn the monthly contribution banner is off on mobile portrait (until we get a better graphic?)
  */
  /* mobile adjustments needed for contribute text in the brand header */
- /* Media query for viewport less than 500px to turn off contribute banner */
- @media (max-width: 500px) {
+ /* Media query for viewport less than 900px to turn off contribute banner */
+ @media (max-width: 900px) {
     #tiaa-contribute-banner {
         display: none; // could use another graphic for this?
     }
@@ -11,6 +11,9 @@
 .tiaa-contribute-image-div {
     position: relative;
     right: -600px;
+}
+#tiaa-contribute-banner {
+    right: 140px;
 }
 /* hack on 6/28/21
  * keeps header from overlaying slide in on mobile
@@ -21,8 +24,7 @@
 }
 #tiaa-header-background-bar {
     background-color: #6EC1E4;
-//  width: 100vw;
-  width: 100%;
+ width: 100vw;
   padding: 0;
     height: 60px;
     margin: auto;
