@@ -2,8 +2,8 @@
  * turn the monthly contribution banner is off on mobile portrait (until we get a better graphic?)
  */
  /* mobile adjustments needed for contribute text in the brand header */
- /* Media query for viewport less than 900px to turn off contribute banner */
- @media (max-width: 900px) {
+ /* Media query for viewport less than 650px to turn off contribute banner */
+ @media (max-width: 650px) {
     #tiaa-contribute-banner {
         display: none; // could use another graphic for this?
     }
