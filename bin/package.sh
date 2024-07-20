@@ -12,8 +12,9 @@ if [ ! -w "${outdir}" ]; then
   exit 1
 fi
 
-export current_date=$(date "+%y%m%d%H%M")
-export current_branch=$(git branch --show-current)
+current_date=$(date "+%y%m%d%H%M")
+current_branch=$(git branch --show-current)
+export current_date, current_branch
 
 case  ${current_branch} in
   "prod")
@@ -29,7 +30,7 @@ case  ${current_branch} in
     echo "unknown branch: " + "${current_branch}"
     exit 1
     ;;
-esacsho
+esac
 
 cd ../
 
