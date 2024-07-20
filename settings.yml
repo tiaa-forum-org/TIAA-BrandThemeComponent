@@ -1,5 +1,5 @@
 contribute_button_color:
-  default: green
+  default: yellow
   type: enum
   description: "Set color based on level of reserves as determined by the tiaa-forum.org Treasurer."
   choices:
@@ -18,5 +18,5 @@ contribute_text_color:
 
 display_contribute_banner:
   type: bool
-  default: false
+  default: true
   description: "Select to enable the Contribute Banner to the brand header."
