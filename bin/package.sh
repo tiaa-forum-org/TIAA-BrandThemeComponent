@@ -5,10 +5,10 @@ if [  $# != 1 ]; then
   exit 1
 fi
 
-export outdir="$1"
+export out_dir="$1"
 
-if [ ! -w "${outdir}" ]; then
-  echo "output directory is not writeable: ${outdir}"
+if [ ! -w "${out_dir}" ]; then
+  echo "output directory is not writeable: ${out_dir}"
   exit 1
 fi
 
@@ -34,11 +34,11 @@ esac
 
 cd ../
 
-mv about.json ${outdir}/about.json.orig
-sed -e "/name\":/s/\",/-${current_date}\",/" ${outdir}/about.json.orig >about.json
+mv about.json "${out_dir}"/about.json.orig
+sed -e "/name\":/s/\",/-${current_date}\",/" "${out_dir}"/about.json.orig >about.json
 
-zip -r ${outdir}/${pkgPrefix}TIAA-BrandThemeComponent-${current_date} ./ -x .idea/\* -x .git* -x .git/\*
+zip -r "${out_dir}"/${pkgPrefix}TIAA-BrandThemeComponent-"${current_date}" ./ -x .idea/\* -x .git* -x .git/\*
 
-mv ${outdir}/about.json.orig about.json
+mv "${out_dir}"/about.json.orig about.json
 
-echo "zip file in: ${outdir}/${pkgPrefix}TIAA-BrandThemeComponent-${current_date}"
+echo "zip file in: ${out_dir}/${pkgPrefix}TIAA-BrandThemeComponent-${current_date}"
