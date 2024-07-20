@@ -75,6 +75,7 @@ html:not(.anon) #tiaa-header-loggedoff {
     padding-top: 10px;
     padding-left: 0px;
     margin-left: 0px;
+    width: 500px; // if over 700, will mess with contribute banner
 }
 .Navigation.Navigation--global .Navigation-inner {
     height: 48px;
