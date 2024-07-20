@@ -4,7 +4,7 @@ This repository contains the files required for the "Brand Header" (header above
 Discourse header on top of the forum home page), as well as a few files/scripts to support
 the development and support of these files
 ## Repo Design Conventions
-This repository is comprised of 3 branches:
+This repository comprises 3 branches:
 - prod - this is for production (should be pretty stable)
 - test - use this branch to get a header for the test instance (used for testing/staging)
 - dev - this branch is where development happens, usually on a localhost machine...
@@ -12,7 +12,7 @@ This repository is comprised of 3 branches:
 When making commits, use a title prefix of "PROD:", "TEST:", or "DEV:" to differentiate
 things like configuration changes that are different between the branches. Thus, all merges
 should use `git cherry-pick ...` to exclude things that shouldn't be used between branches
-(like assets, pathnames, etc.).
+(like assets, path names, etc.).
 
 ## bin/package.sh
 Normally, this repository should be installed on the target site directly from GitHub the 
@@ -36,17 +36,16 @@ repository
 5. In the terminal window:
    - type ```git clone <paste the link to the repository>```
    - cd into the directory created
-   - type ```git branch``` which should return the branch ```prod``` since that's the default branch
+   - type ```git branch --show-current``` which should return the branch ```prod``` since that's the default branch
    - if you want to create a package with either the test or dev branches:
      - type ```git checkout <either 'test' or 'dev'>```
-     - now ```git branch```should return the desired branch name
+     - now ```git branch --show-current```should return the desired branch name
    - cd into the bin directory
-   - type ```./package.sh <directory writeble by you>``` - you can use a temporary directory (like /tmp or ~/Downloads) 
-since this will only be used for uploading to the Discourse server
+   - type ```./package.sh <directory writeble by you>``` - you can use a temporary directory 
+     (like /tmp or~/Downloads) since this will only be used for uploading to the Discourse server
    - this will create a zip archive file with a prefix of 'TEST:' or 'DEV:' if not prod and a suffix of the current date/time.
-1. You can then go to your Discourse instance and go to admin->customize->theme->components and install the 
+6.You can then go to your Discourse instance and go to admin->customize->theme->components and install the 
 .zip archive from your local device.
 
 If modifications have been made and tested, they can then be edited on or committed and pushed 
-to GitHub. Once changes
-are made using source control they should be verified/tested again. 
+to GitHub. Once changes are made using source control they should be verified/tested again. 
