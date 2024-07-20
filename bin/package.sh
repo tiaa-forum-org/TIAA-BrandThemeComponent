@@ -29,7 +29,7 @@ case  ${current_branch} in
     echo "unknown branch: " + "${current_branch}"
     exit 1
     ;;
-esac
+esacsho
 
 cd ../
 
