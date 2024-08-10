@@ -19,7 +19,7 @@
 #tiaa-contribute-banner {
     all: unset; /* Clears all existing styles */
     position: absolute;
-    left: 460px;
+    left: 490px;
     display: inline-block; /* Ensures the anchor tag covers the entire area of its child elements */
     cursor: pointer; /* Ensures the cursor changes to a pointer when hovering over the link */
     text-decoration: none; /* Removes any text decoration (underline) */
@@ -77,7 +77,7 @@ html:not(.anon) #tiaa-header-loggedoff {
     padding-top: 10px;
     padding-left: 0px;
     margin-left: 0px;
-    width: 475px; // if over 500, will mess with contribute banner
+    width: 490px; // if over 500, will mess with contribute banner
 }
 .Navigation.Navigation--global .Navigation-inner {
     height: 48px;
