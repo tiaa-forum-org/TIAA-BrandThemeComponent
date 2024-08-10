@@ -8,6 +8,7 @@
   "minimum_discourse_version": null,
   "maximum_discourse_version": null,
   "assets": {
+    "TIAA-500x60-2C3386": "assets/TIAA-500x60-2C3386.svg",
     "TIAA-contribute-type-outlines": "assets/TIAA-contribute-type-outlines.svg",
     "tiaa_logo_small": "assets/tiaa_logo_small.png"
   },
