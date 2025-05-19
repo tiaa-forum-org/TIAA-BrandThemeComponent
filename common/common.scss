@@ -6,7 +6,7 @@
 /* added 6/23/24 for contribute banner */
 /* contribute banner image */
 .tiaa-contribute-image-div {
-    background-image: url($TIAA-500x60-2C3386);
+    background-image: url($HS-ContributeBlue);
     display: block;
     align-items: center;
     width: 500px;
@@ -16,7 +16,7 @@
     background-position: center center; // Center the image within the div
 }
 /* get rid of inherited styles on anchor tag */
-#tiaa-contribute-banner {
+.tiaa-contribute-banner {
     all: unset; /* Clears all existing styles */
     position: absolute;
     left: 490px;
@@ -29,7 +29,7 @@
 }
 
 @if $display_contribute_banner == "false" {
-    #tiaa-contribute-banner {
+    .tiaa-contribute-banner {
         display: none;
     }
 }

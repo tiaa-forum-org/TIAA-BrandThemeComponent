@@ -4,13 +4,13 @@
  /* mobile adjustments needed for contribute text in the brand header */
  /* Media query for viewport less than ~750px to turn off contribute banner */
  @media (max-width: 726px) {
-    #tiaa-contribute-banner {
+    .tiaa-contribute-banner {
         display: none; // could use another graphic for this?
     }
 }
 
 // buttons shrink on mobile
-#tiaa-contribute-banner {
+.tiaa-contribute-banner {
     left: 420px;
 }
 /* hack on 6/28/21
